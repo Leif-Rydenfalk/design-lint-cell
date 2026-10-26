@@ -1,0 +1,6 @@
+# design.lint — check an HTML page against the landing-page-design rules.
+name = "design.lint"
+
+[api]
+input = "{\"html\": string, \"css\": string}"
+output = "{\"score\": number, \"violations\": [{\"rule\": string, \"severity\": string, \"evidence\": string, \"fix\": string}]}"
